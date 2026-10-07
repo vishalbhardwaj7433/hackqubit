@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="UPI Shield AI helps detect suspicious UPI IDs, QR codes, payment pages and fake payment flows before you pay." />
+    <title>UPI Shield AI | Detect before you pay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header__inner">
+        <a href="#home" class="brand" aria-label="UPI Shield AI home">
+          <span class="brand__icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 5 52 12v14c0 11.9-7.5 22.6-20 29-12.5-6.4-20-17.1-20-29V12l20-7Zm-1 14h2v18h-2V19Zm1 22c1.6 0 3 1.3 3 3s-1.4 3-3 3-3-1.3-3-3 1.4-3 3-3Z"/>
+              <path d="M32 18h-1.5l-4.5 8h3.2l1.5-2.6 1.7 2.6h3.1l-4.3-8Zm-6 14.7c1.7.9 3.4 1.4 5.3 1.7v3.7h-2.7l-.6 3h3.3v2.3h-3.7l-.5 2.6h-2.8l.5-2.6h-2.7v-2.3h2.8l.6-3h-2.6v-3.7c1.9-.3 3.7-.8 5.3-1.7Zm12.3 0c1.8.9 3.6 1.4 5.4 1.7v3.7h-2.8l-.6 3h3.4v2.3h-3.8l-.5 2.6h-2.8l.5-2.6h-2.8v-2.3h2.9l.5-3h-2.5v-3.7c1.7-.3 3.6-.8 5.4-1.7Z" fill="currentColor" opacity="0.2"/>
+            </svg>
+          </span>
+          <span class="brand__text">UPI Shield AI</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#scanner">Scanner</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+
+        <a href="#scanner" class="btn btn--primary btn--header">Scan Now</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <span class="eyebrow">AI-powered payment protection</span>
+            <h1>
+              Detect <span class="text-gradient">Fake Payments</span><br />
+              Before You Pay.
+            </h1>
+            <p class="hero__subtitle">
+              AI-powered risk analysis for suspicious UPI IDs, QR codes, payment pages and mobile
+              payment interfaces.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#scanner" class="btn btn--primary">Scan a Payment</a>
+              <a href="#how-it-works" class="btn btn--secondary">See How It Works</a>
+            </div>
+
+            <div class="hero__trust-row">
+              <div class="hero__trust">Built for safer digital payments</div>
+              <div class="hero__badge-row">
+                <span class="metric-pill">4.8K+ Screens</span>
+                <span class="metric-pill">99.2% Stability</span>
+              </div>
+            </div>
+
+            <div class="hero__stats" aria-label="Product metrics">
+              <div class="hero__stat">
+                <strong>4.8K+</strong>
+                <span>Payments screened</span>
+              </div>
+              <div class="hero__stat">
+                <strong>2.1s</strong>
+                <span>Avg. scan time</span>
+              </div>
+              <div class="hero__stat">
+                <strong>96%</strong>
+                <span>Signal accuracy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-label="Security dashboard preview">
+            <div class="dashboard-panel">
+              <div class="dashboard-panel__top">
+                <div>
+                  <p class="panel-label">Risk Score</p>
+                  <h3>18/100</h3>
+                </div>
+                <span class="status-badge status-badge--low">Low Risk</span>
+              </div>
+
+              <div class="dashboard-panel__meta">
+                <span class="metric-pill metric-pill--dark">AI signal: strong</span>
+                <span class="metric-pill metric-pill--dark">Realtime check</span>
+              </div>
+
+              <ul class="dashboard-checks">
+                <li><span>UPI ID</span><strong>Verified</strong></li>
+                <li><span>QR Code</span><strong>Safe</strong></li>
+                <li><span>Payment Page</span><strong>Safe</strong></li>
+              </ul>
+
+              <div class="mini-graph" aria-hidden="true">
+                <span style="height: 40%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 45%"></span>
+                <span style="height: 70%"></span>
+                <span style="height: 52%"></span>
+                <span style="height: 35%"></span>
+                <span style="height: 28%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--scanner" id="scanner">
+        <div class="container">
+          <div class="section-header section-header--center">
+            <span class="eyebrow">Threat detection</span>
+            <h2>Payment Security Scanner</h2>
+            <p>
+              Upload a screenshot or provide payment information to identify suspicious indicators.
+            </p>
+          </div>
+
+          <div class="scanner-shell">
+            <div class="scanner-toolbar">
+              <div class="tab-list" role="tablist" aria-label="Scan methods">
+                <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="screenshot">
+                  Screenshot Scan
+                </button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="upi">
+                  UPI ID Check
+                </button>
+                <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="url">
+                  Payment URL
+                </button>
+              </div>
+
+              <div class="toolbar-actions">
+                <button type="button" id="demoScanBtn" class="btn btn--ghost btn--demo">Try Demo Scan</button>
+                <button type="button" id="resetScanBtn" class="btn btn--text">Reset Scan</button>
+              </div>
+            </div>
+
+            <div class="tab-panel active" id="panel-screenshot" role="tabpanel">
+              <form id="screenshotForm" novalidate>
+                <div class="upload-area" id="uploadArea" tabindex="0" aria-label="Upload payment screenshot">
+                  <input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp" hidden />
+                  <div class="upload-zone">
+                    <div class="upload-icon">⬆</div>
+                    <p>Drag & drop or click to upload</p>
+                    <span>JPG, PNG, WEBP • Max 5MB</span>
+                  </div>
+                  <div id="previewWrap" class="preview-wrap hidden">
+                    <img id="previewImage" src="" alt="Uploaded payment screenshot preview" />
+                  </div>
+                </div>
+
+                <div class="file-meta-row">
+                  <div id="fileMeta" class="file-meta">No image selected</div>
+                  <button type="button" id="removeImageBtn" class="btn btn--secondary btn--small hidden">Remove</button>
+                </div>
+
+                <div class="scanner-actions">
+                  <button type="button" id="scanImageBtn" class="btn btn--primary">Scan Image</button>
+                </div>
+
+                <p class="prototype-note">
+                  Prototype-only analysis. Uploaded data is reviewed for demonstration purposes only and no payment is processed.
+                </p>
+              </form>
+            </div>
+
+            <div class="tab-panel" id="panel-upi" role="tabpanel">
+              <form id="upiForm" novalidate>
+                <label class="field" for="upiInput">
+                  <span>Enter UPI ID</span>
+                  <input id="upiInput" type="text" placeholder="merchant@upi" />
+                </label>
+                <div class="scanner-actions">
+                  <button type="submit" class="btn btn--primary">Analyze UPI ID</button>
+                </div>
+                <p class="prototype-note">
+                  Prototype-only analysis. Do not complete any payment based on this demo result.
+                </p>
+              </form>
+            </div>
+
+            <div class="tab-panel" id="panel-url" role="tabpanel">
+              <form id="urlForm" novalidate>
+                <label class="field" for="urlInput">
+                  <span>Paste payment page URL</span>
+                  <input id="urlInput" type="url" placeholder="https://example-payment-page.com" />
+                </label>
+                <div class="scanner-actions">
+                  <button type="submit" class="btn btn--primary">Analyze URL</button>
+                </div>
+                <p class="prototype-note">
+                  Prototype-only analysis. This is a security-awareness tool, not a payment approval system.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <div id="message" class="status-message" aria-live="polite"></div>
+
+          <div id="loadingState" class="loading-state hidden" aria-live="polite">
+            <div class="loading-card">
+              <div class="spinner" aria-hidden="true"></div>
+              <div>
+                <p class="loading-title">Analyzing payment interface…</p>
+                <ul class="progress-list">
+                  <li class="done">✓ Image received</li>
+                  <li class="done">✓ Payment interface detected</li>
+                  <li class="active">→ Checking suspicious indicators</li>
+                  <li>○ Generating risk assessment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="resultPanel" class="result-panel hidden" aria-live="polite">
+            <div class="result-panel__head">
+              <div class="result-score-box">
+                <span class="result-label">RISK SCORE</span>
+                <div class="result-score"><span id="riskScoreValue">18</span> <span>/ 100</span></div>
+              </div>
+
+              <div class="result-status">
+                <span class="result-label">Status</span>
+                <strong id="resultStatus" class="status-badge status-badge--low">LOW RISK</strong>
+              </div>
+            </div>
+
+            <div class="result-grid">
+              <article class="analysis-card">
+                <h3>UPI ID</h3>
+                <p id="analysisUpi">Looks Legitimate</p>
+              </article>
+              <article class="analysis-card">
+                <h3>Payment Page</h3>
+                <p id="analysisPage">No Major Indicators</p>
+              </article>
+              <article class="analysis-card">
+                <h3>QR Code</h3>
+                <p id="analysisQr">No Suspicious Pattern Detected</p>
+              </article>
+              <article class="analysis-card">
+                <h3>Scam Patterns</h3>
+                <p id="analysisScam">Not Detected</p>
+              </article>
+            </div>
+
+            <div class="result-info">
+              <div class="reason-box">
+                <h3>Why this result?</h3>
+                <ul id="resultReasons" class="reason-list"></ul>
+              </div>
+
+              <div class="recommendation-box">
+                <h3>Security Recommendation</h3>
+                <p id="resultRecommendation"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="security">
+        <div class="container">
+          <div class="section-header section-header--center light-heading">
+            <span class="eyebrow eyebrow--light">Built for detection at scale</span>
+            <h2>Built for Detection at Scale</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">◎</div>
+              <h3>UPI Intelligence</h3>
+              <p>Analyze UPI identifiers and payment metadata.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">◌</div>
+              <h3>Visual Detection</h3>
+              <p>Analyze screenshots, QR codes and payment interfaces.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">✦</div>
+              <h3>AI Risk Engine</h3>
+              <p>Combine multiple signals into a single risk score.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">↻</div>
+              <h3>Real-Time Monitoring</h3>
+              <p>Designed to process large numbers of payment checks through APIs.</p>
+            </article>
+          </div>
+
+          <div class="architecture-box">
+            <div class="architecture-flow">
+              <span>User</span>
+              <span class="arrow">↓</span>
+              <span>Screenshot / UPI ID / URL</span>
+              <span class="arrow">↓</span>
+              <span>Detection API</span>
+              <span class="arrow">↓</span>
+              <span>OCR + Pattern Analysis + AI</span>
+              <span class="arrow">↓</span>
+              <span>Risk Engine</span>
+              <span class="arrow">↓</span>
+              <span>Security Recommendation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header section-header--center">
+            <span class="eyebrow">Signals</span>
+            <h2>What We Look For</h2>
+          </div>
+
+          <div class="signal-grid">
+            <article class="signal-card"><span class="signal-icon">⚠</span><p>Fake UPI identifiers</p></article>
+            <article class="signal-card"><span class="signal-icon">🛡</span><p>Payment-page impersonation</p></article>
+            <article class="signal-card"><span class="signal-icon">◍</span><p>Suspicious QR codes</p></article>
+            <article class="signal-card"><span class="signal-icon">✓</span><p>Fake payment confirmation screens</p></article>
+            <article class="signal-card"><span class="signal-icon">⏱</span><p>Urgency-based scam messages</p></article>
+            <article class="signal-card"><span class="signal-icon">🔗</span><p>Suspicious domains</p></article>
+            <article class="signal-card"><span class="signal-icon">🧩</span><p>Brand impersonation</p></article>
+            <article class="signal-card"><span class="signal-icon">💬</span><p>Unusual payment instructions</p></article>
+            <article class="signal-card"><span class="signal-icon">📱</span><p>Suspicious app/payment UI patterns</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="how-it-works">
+        <div class="container">
+          <div class="section-header section-header--center">
+            <span class="eyebrow">Simple flow</span>
+            <h2>How It Works</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-number">01</div>
+              <h3>Upload / Enter</h3>
+              <p>Provide a screenshot, UPI ID or payment URL for review.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">02</div>
+              <h3>Analyze</h3>
+              <p>Check identifiers, layout patterns and suspicious signals.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">03</div>
+              <h3>Calculate Risk</h3>
+              <p>Combine visual and metadata signals into a risk score.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">04</div>
+              <h3>Get Recommendation</h3>
+              <p>View guidance on whether the payment should be reviewed further.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security-disclaimer">
+        <div class="container">
+          <p>
+            UPI Shield AI provides risk indicators for educational and security-awareness purposes. Results
+            should not be treated as a guarantee that a payment is safe or fraudulent. Always verify the
+            recipient and payment details before completing a transaction.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--about" id="about">
+        <div class="container about-wrap">
+          <div class="about-copy">
+            <span class="eyebrow">About</span>
+            <h2>Built for Safer Digital Payments</h2>
+            <p>
+              This hackathon prototype combines computer vision, OCR, pattern detection, AI risk analysis and
+              payment security to help users spot suspicious payment flows before they proceed.
+            </p>
+            <ul class="about-list">
+              <li>Computer Vision</li>
+              <li>OCR</li>
+              <li>Pattern Detection</li>
+              <li>AI Risk Analysis</li>
+              <li>Payment Security</li>
+            </ul>
+          </div>
+
+          <div class="about-panel">
+            <div class="mini-badges">
+              <span class="badge badge--green">Low Risk</span>
+              <span class="badge badge--orange">Watchlist</span>
+              <span class="badge badge--red">High Risk</span>
+            </div>
+            <div class="about-panel__score">
+              <span>AI Signal Confidence</span>
+              <strong>91%</strong>
+            </div>
+            <p>Prototype analysis only. This interface is designed to support safer digital payment decisions.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand__icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 5 52 12v14c0 11.9-7.5 22.6-20 29-12.5-6.4-20-17.1-20-29V12l20-7Zm-1 14h2v18h-2V19Zm1 22c1.6 0 3 1.3 3 3s-1.4 3-3 3-3-1.3-3-3 1.4-3 3-3Z"/>
+              </svg>
+            </span>
+            <span class="brand__text">UPI Shield AI</span>
+          </div>
+          <p>AI-powered payment risk analysis.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#scanner">Scanner</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#security">Security</a>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="footer-badge">Hackathon Prototype</div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
